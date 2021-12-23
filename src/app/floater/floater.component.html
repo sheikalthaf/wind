@@ -1,0 +1,78 @@
+<main class="w-main">
+  {{ floaterService.arr }}
+  <ng-container *ngFor="let item of floaterService.arr; index as i">
+    <aside
+      class="w-container f-center"
+      #floater
+      cdkDrag
+      (mousedown)="floaterService.floaterClicked$.next(i)"
+    >
+      <section class="w-header" cdkDragHandle>
+        <h4 class="w-title">Heading {{ i }}</h4>
+        <button class="w-close-btn" (click)="floaterService.close(i)"></button>
+      </section>
+      <section class="w-content">
+        <!-- <ng-container *ngComponentOutlet="component"></ng-container> -->
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+          est libero sunt maxime minus ullam a, perspiciatis explicabo
+          architecto quidem fugit, eos quia culpa excepturi fuga fugiat? Eos,
+          facere pariatur recusandae voluptates eveniet laborum. Eum dolorem
+          dolores aliquid est beatae sit, doloribus, minima vitae harum
+          aspernatur, reprehenderit qui atque. Temporibus quasi exercitationem
+          possimus minus dicta quo, voluptate totam dignissimos officia
+          perferendis autem libero architecto corporis aliquid quod. Odio rerum
+          quis laborum porro tempora reprehenderit commodi! Labore dolorum
+          itaque sit autem fugiat alias, delectus neque doloribus eaque ad,
+          molestiae dolores dolor eos quis eius sunt, obcaecati iusto. Harum
+          aliquam ipsum corporis assumenda numquam eius amet velit expedita
+          nulla quasi tenetur in laborum dicta, aut similique excepturi non quod
+          eveniet? Cum eius explicabo, dolor perspiciatis, consectetur laborum
+          delectus totam animi recusandae doloremque pariatur possimus aperiam
+          architecto hic. Assumenda, obcaecati officia. Id tempora eligendi
+          provident molestias rerum deserunt, recusandae, ex excepturi
+          doloremque eaque, voluptate perspiciatis fugit tempore possimus. Sed
+          molestias animi reprehenderit cupiditate nemo soluta expedita quaerat
+          non ad, excepturi debitis perspiciatis suscipit eligendi repellendus
+          fugiat iure consequatur nesciunt magnam accusamus dicta inventore
+          veritatis aperiam consectetur? Fuga, deserunt. Quisquam provident
+          architecto nemo unde fugit illum illo aliquam dolorum hic, molestias
+          eum voluptas exercitationem vel aliquid quasi accusamus cumque iste
+          voluptatibus delectus possimus cum. Obcaecati alias architecto aperiam
+          enim aspernatur ducimus aut, reiciendis corrupti, facere ab voluptate
+          quam, quas nam accusantium iusto? Iste eligendi animi possimus nulla
+          corrupti, mollitia voluptas ea omnis consequatur, laudantium ex magnam
+          asperiores! Cumque eveniet optio laborum vero magnam nobis praesentium
+          reprehenderit assumenda nulla adipisci cum modi, consequuntur quod
+          incidunt accusamus perferendis dolores totam obcaecati qui non tenetur
+          fugit aut suscipit beatae! Soluta necessitatibus possimus, vel
+          deserunt minus aspernatur omnis accusamus odio nesciunt quisquam
+          reiciendis quas atque labore nobis sed provident quasi voluptatibus
+          eos. Similique autem qui, provident non eius ad aspernatur. Maxime
+          voluptate, assumenda eum vel delectus, ab facere consequatur
+          repudiandae doloribus, deleniti aspernatur ut? Neque atque ut
+          nesciunt, quod asperiores eveniet, vel debitis cum laborum corrupti
+          quidem doloremque rem. Debitis totam mollitia quae atque assumenda
+          eligendi quidem provident temporibus? Quod in omnis minima dolore
+          molestiae quia doloribus recusandae nisi aspernatur? Quibusdam dolorum
+          animi quis, totam vitae distinctio harum asperiores non, quia officiis
+          facilis! Iusto ducimus perferendis tenetur praesentium vero aspernatur
+          asperiores doloremque quam explicabo. Delectus, ut consequuntur
+          temporibus ea deserunt officia vel, quasi nihil odit dolorum id ullam.
+          Consequuntur, sint reiciendis? Optio a placeat neque dignissimos ipsa
+          facere illum vero non. Facere impedit tempore doloremque velit
+          expedita ipsa, totam hic sed possimus neque est accusantium repellat
+          cumque. Quo similique ullam impedit, labore minima modi ipsum porro
+          doloribus ducimus eaque autem non rem nesciunt harum veniam excepturi?
+          Laudantium nam ipsum, placeat dolores eaque vel dolorum corporis
+          voluptatum sit mollitia, dolore, fugit ab autem animi aliquam quidem
+          fuga. Placeat et vero nisi suscipit quaerat quos iure aliquam vel?
+          Itaque non autem, voluptatem commodi optio error libero eligendi
+          debitis impedit, dolorum, ad nemo doloribus harum ex amet nulla
+          tempore minus nam modi magni! Molestiae enim dolorem perferendis
+          incidunt esse, nam odio!
+        </p>
+      </section>
+    </aside>
+  </ng-container>
+</main>

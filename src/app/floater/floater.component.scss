@@ -1,0 +1,66 @@
+:host {
+  position: fixed;
+  display: block;
+  top: 0;
+}
+.w-main {
+  // position: fixed;
+  // width: 100vw;
+  // height: 100vh;
+}
+
+.w-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+  max-height: 80vh;
+  min-width: 320px;
+  max-width: 80vw;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgb(0 0 0 / 37%);
+  background-color: rgb(255 255 255 / 83%);
+  backdrop-filter: blur(20px);
+  position: fixed;
+  top: 50%;
+  z-index: 50;
+}
+
+.f-center {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.w-header {
+  border-bottom: 1px solid #eee;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  flex: none;
+}
+
+.w-title {
+  font-size: 20px;
+  // color: white;
+  margin: 0;
+  flex: 1 1 0%;
+}
+
+.w-content {
+  flex: 1 1 0%;
+  overflow: auto;
+  padding: 10px;
+  overscroll-behavior: contain;
+}
+.w-close-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ff5f56;
+}
